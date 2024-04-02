@@ -57,7 +57,7 @@ module.exports = {
         }
       )
       .setThumbnail(botUser.avatarURL({ dynamic: true, format: 'png', size: 1024 }))
-      .setImage(`https://cdn.discordapp.com/attachments/1175487983915376662/1175668219592331385/Multi_Musix_bot.png?ex=656c115a&is=65599c5a&hm=f31305678f6f5621228bae42312b77577380b5757c806469799392bd854a265f&`);
+      .setImage(`https://cdn.discordapp.com/attachments/1170652474563117138/1224660177039396876/MULTI_MUSIC_v1.5.png?ex=661e4cab&is=660bd7ab&hm=f7a542462fabaf9c1530ece5aa72597cff3ac032876bba46df5ddba7e122ea99&`);
 
     const button1 = new ButtonBuilder()
       .setLabel('YouTube')
