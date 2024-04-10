@@ -112,7 +112,15 @@ async function playSong(connection, searchQuery, message) {
   const video = searchResult.results[0];
   const youtubeLink = `https://www.youtube.com/watch?v=${video.id}`;
 
-  const stream = ytdl(youtubeLink, { filter: 'audioonly' });
+  const stream = ytdl(youtubeLink, {
+  filter: 'audioonly',
+  requestOptions: {
+    filter: 'audioandvideo',
+    format: 'audioonly',
+    audioEncoding: 'opus',
+    audioQuality: '192', // Set audio quality to 192kbps
+  },
+});
   const resource = createAudioResource(stream, {
     inputType: StreamType.Arbitrary,
     inlineVolume: true,
