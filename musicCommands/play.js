@@ -7,6 +7,7 @@ const {
   AudioPlayerStatus,
   entersState,
   VoiceConnectionStatus,
+  voiceConnection,
 } = require('@discordjs/voice');
 const ytdl = require('ytdl-core');
 const YouTubeSearch = require('youtube-search');
