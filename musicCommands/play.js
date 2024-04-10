@@ -10,6 +10,7 @@ const {
   voiceConnection,
 } = require('@discordjs/voice');
 const ytdl = require('ytdl-core');
+ytdl.YTDL_NO_UPDATE = true;
 const YouTubeSearch = require('youtube-search');
 const { EmbedBuilder } = require('discord.js');
 const { updateHistory } = require('./historyUtils');
