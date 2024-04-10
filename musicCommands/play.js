@@ -220,9 +220,7 @@ async function playSong(connection, searchQuery, message) {
     console.error(error);
     if (voiceConnection && !voiceConnection.destroyed) {
     voiceConnection.destroy();
-} else {
-    console.error("VoiceConnection already destroyed or doesn't exist.");
-}
+    } 
     message.reply('🔴 There was an error playing the music.');
   }
 }
