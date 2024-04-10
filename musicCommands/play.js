@@ -218,9 +218,11 @@ async function playSong(connection, searchQuery, message) {
     collector.on('end', () => console.log('Button interaction collector ended.'));
   } catch (error) {
     console.error(error);
-    if (!connection.destroyed) {
-      connection.destroy();
-    }
+    if (voiceConnection && !voiceConnection.destroyed) {
+    voiceConnection.destroy();
+} else {
+    console.error("VoiceConnection already destroyed or doesn't exist.");
+}
     message.reply('🔴 There was an error playing the music.');
   }
 }
