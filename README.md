@@ -1,4 +1,4 @@
-#  MULTI-MUSIC BOT BY RTX 
+#  MULTI-MUSIC BOT BY GlaceYT 
 ▶️ simple and powerful multi music bot.
 ▶️ consisting of various commands.
 ▶️ Still in development you may face minor bugs|
@@ -45,11 +45,11 @@ The basic or default prefix is "?". You can change the prefix by modifying the `
 
 # 📚 Copyright 
 
-All code in this project is authored by RTX. Please do not use this code for any public usage, such as creating YouTube videos, Git repositories, etc., without my explicit permission.
+All code in this project is authored by GlaceYT. Please do not use this code for any public usage, such as creating YouTube videos, Git repositories, etc., without my explicit permission.
 
 /*
 
-   MADE BY RTX!! FEEL FREE TO USE ANY PART OF CODE
+   MADE BY GlaceYT!! FEEL FREE TO USE ANY PART OF CODE
 
   ██████╗░████████╗██╗░░██╗           
   ██╔══██╗╚══██╔══╝╚██╗██╔╝          
