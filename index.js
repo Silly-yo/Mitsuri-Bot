@@ -1,25 +1,24 @@
 /*
 
-   MADE BY RTX!! FEEL FREE TO USE ANY PART OF CODE
+  ________.__                        _____.___.___________
+ /  _____/|  | _____    ____  ____   \__  |   |\__    ___/
+/   \  ___|  | \__  \ _/ ___\/ __ \   /   |   |  |    |   
+\    \_\  \  |__/ __ \\  \__\  ___/   \____   |  |    |   
+ \______  /____(____  /\___  >___  >  / ______|  |____|   
+        \/          \/     \/    \/   \/                  
+
+╔════════════════════════════════════════════════════════════════════════╗
+║                                                                        ║
+║  ## Created by GlaceYT!                                                ║
+║  ## Feel free to utilize any portion of the code                       ║
+║  ## DISCORD :  https://discord.com/invite/xQF9f9yUEM                   ║
+║  ## YouTube : https://www.youtube.com/@GlaceYt                         ║
+║                                                                        ║
+╚════════════════════════════════════════════════════════════════════════╝
 
 
-  ██████╗░████████╗██╗░░██╗           
-  ██╔══██╗╚══██╔══╝╚██╗██╔╝          
-  ██████╔╝░░░██║░░░░╚███╔╝░          
-  ██╔══██╗░░░██║░░░░██╔██╗░          
-  ██║░░██║░░░██║░░░██╔╝╚██╗          
-  ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          
-
-   FOR EMOJIS EITHER YOU CAN EDIT OR JOIN OUR DISCORD SERVER 
-   SO WE ADD BOT TO OUR SERVER SO YOU GET ANIMATED EMOJIS.
-
-   DISCORD SERVER : https://discord.gg/FUEHs7RCqz
-   YOUTUBE : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
-
-   FOR HELP CONTACT ME ON DISCORD
-   ## Contact    [ DISCORD SERVER :  https://discord.gg/c4kaW2sSbm ]
-   
 */
+
 
 const { Client, GatewayIntentBits, ActivityType } = require('discord.js');
 const { EmbedBuilder } = require('discord.js');
@@ -165,21 +164,22 @@ module.exports = client;
 
 
 /*
-   MADE BY RTX!! FEEL FREE TO USE ANY PART OF CODE
 
-  ██████╗░████████╗██╗░░██╗           
-  ██╔══██╗╚══██╔══╝╚██╗██╔╝          
-  ██████╔╝░░░██║░░░░╚███╔╝░          
-  ██╔══██╗░░░██║░░░░██╔██╗░          
-  ██║░░██║░░░██║░░░██╔╝╚██╗          
-  ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          
+  ________.__                        _____.___.___________
+ /  _____/|  | _____    ____  ____   \__  |   |\__    ___/
+/   \  ___|  | \__  \ _/ ___\/ __ \   /   |   |  |    |   
+\    \_\  \  |__/ __ \\  \__\  ___/   \____   |  |    |   
+ \______  /____(____  /\___  >___  >  / ______|  |____|   
+        \/          \/     \/    \/   \/                  
 
-   FOR EMOJIS EITHER YOU CAN EDIT OR JOIN OUR DISCORD SERVER 
-   SO WE ADD BOT TO OUR SERVER SO YOU GET ANIMATED EMOJIS.
+╔════════════════════════════════════════════════════════════════════════╗
+║                                                                        ║
+║  ## Created by GlaceYT!                                                ║
+║  ## Feel free to utilize any portion of the code                       ║
+║  ## DISCORD :  https://discord.com/invite/xQF9f9yUEM                   ║
+║  ## YouTube : https://www.youtube.com/@GlaceYt                         ║
+║                                                                        ║
+╚════════════════════════════════════════════════════════════════════════╝
 
-   DISCORD SERVER : https://discord.gg/FUEHs7RCqz
-   YOUTUBE : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
 
-   FOR HELP CONTACT ME ON DISCORD
-   ## Contact    [ DISCORD SERVER :  https://discord.gg/c4kaW2sSbm ]
 */
