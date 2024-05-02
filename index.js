@@ -27,7 +27,7 @@ const path = require('path');
 const { Player } = require('discord-player');
 const express = require('express');
 require('dotenv').config();
-const ytdl = require('ytdl-core');
+const ytdl = require('YTDL_NO_UPDATE');
 const { DisTube } = require('distube');
 
 const client = new Client({
