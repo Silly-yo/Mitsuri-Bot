@@ -17,7 +17,7 @@ module.exports = {
         url: 'https://discord.gg/FUEHs7RCqz'
     })
      
-      .setDescription(`__**STATS :**__\n\n> **📊 Bot in servers:** ${serverCount}\n> **🟢 Bot Ping:** ${botPing}ms\n> **👑 Made By [Silly](https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A)**\n\n__**COMMANDS :**__ `)
+      .setDescription(`__**STATS :**__\n\n> **📊 Bot in servers:** ${serverCount}\n> **🟢 Bot Ping:** ${botPing}ms\n> **👑 Made By [Silly](https://youtu.be/BBJa32lCaaY?si=ds_xe5WVDF_yg_Z1)**\n\n__**COMMANDS :**__ `)
       .addFields(
         // Basic commands category
         {
@@ -57,7 +57,7 @@ module.exports = {
         }
       )
       .setThumbnail(botUser.avatarURL({ dynamic: true, format: 'png', size: 1024 }))
-      .setImage(`https://i.pinimg.com/originals/fa/2c/51/fa2c5151231471504c3dc89a63b8b24f.gif`);
+      .setImage(`https://dthezntil550i.cloudfront.net/00resources/images/page/banner/b7/b7fb6cb9-dff5-45b1-aa23-d84247841ddf.jpg`);
 
     const button1 = new ButtonBuilder()
       .setLabel('Silly')
@@ -65,7 +65,7 @@ module.exports = {
       .setStyle(ButtonStyle.Link);
       
     const row = new ActionRowBuilder()
-      .addComponents(button1, button2, button3);
+      .addComponents(button1);
     
     message.reply({ embeds: [embed], components: [row] });
   },
