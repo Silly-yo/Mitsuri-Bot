@@ -5,7 +5,7 @@ const path = require('path');
 const { Player } = require('discord-player');
 const express = require('express');
 require('dotenv').config();
-const ytdl = require('YTDL_NO_UPDATE');
+const ytdl = require('ytdl-core');
 const { DisTube } = require('distube');
 const { SpotifyPlugin } = require('@distube/spotify');
 
