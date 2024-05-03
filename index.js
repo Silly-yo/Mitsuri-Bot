@@ -7,7 +7,7 @@ const express = require('express');
 require('dotenv').config();
 const ytdl = require('ytdl-core');
 const { DisTube } = require('distube');
-const { SpotifyPlugin } = require('@distube/spotify');
+const { SpotifyPlugin } = require('distube/spotify');
 
 const client = new Client({
   intents: Object.keys(GatewayIntentBits).map((a) => {
