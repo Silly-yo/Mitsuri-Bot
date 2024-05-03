@@ -7,7 +7,6 @@ const express = require('express');
 require('dotenv').config();
 const ytdl = require('ytdl-core');
 const { DisTube } = require('distube');
-const { SpotifyPlugin } = require('distube/spotify');
 
 const client = new Client({
   intents: Object.keys(GatewayIntentBits).map((a) => {
@@ -21,11 +20,6 @@ const distube = new DisTube(client, {
   leaveOnEmpty: true,
   leaveOnFinish: true,
   leaveOnStop: true,
-  plugins: [
-    new SpotifyPlugin({
-      emitEventsAfterFetching: true
-    })
-  ]
 });
 const prefixData = require('./prefix.json');
 const prefix = prefixData.prefix;
