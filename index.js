@@ -102,28 +102,6 @@ client.on('messageCreate', (message) => {
   }
 });
 
-client.on('messageCreate', async (message) => {
-  if (message.content.toLowerCase() === `${prefix}exit` && message.author.bot) {
-    if (message.member.permissions.has('ADMINISTRATOR')) { // Optional: Check for admin permissions
-      try {
-        await message.reply('Shutting down the bot...'); // Inform user about shutdown
-
-        // Log out the bot from Discord
-        await client.destroy();
-        console.log('Bot has been logged out.');
-
-        // Exit the process with success code
-        process.exit(0);
-      } catch (error) {
-        console.error('Error occurred during bot shutdown:', error);
-        process.exit(1); // Exit the process with error code
-      }
-    } else {
-      message.reply('You do not have permission to use this command.');
-    }
-  }
-});
-
 async function login() {
   try {
     await client.login(process.env.TOKEN);
