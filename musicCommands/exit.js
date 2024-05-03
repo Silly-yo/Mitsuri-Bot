@@ -3,12 +3,13 @@ const playModule = require('./play.js');
 
 module.exports = {
   name: 'exit',
+  aliases: ["lev", "stop", "dc"],
   description: 'disconnect the music bot',
   execute: (message, args) => {
     const currentConnection = playModule.getCurrentConnection();
     if (currentConnection && currentConnection.state.status === VoiceConnectionStatus.Ready) {
-      playModule.pause();
-    } else {
+      playModule.pause(); 
+   } else {
       message.reply('❌ The bot is not currently playing any music.');
     }
   },
