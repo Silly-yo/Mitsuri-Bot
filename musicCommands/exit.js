@@ -8,7 +8,7 @@ module.exports = {
   execute: (message, args) => {
     const currentConnection = playModule.getCurrentConnection();
     if (currentConnection && currentConnection.state.status === VoiceConnectionStatus.Ready) {
-      playModule.pause(); 
+      playModule.exit(); 
    } else {
       message.reply('❌ The bot is not currently playing any music.');
     }
