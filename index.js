@@ -1,25 +1,3 @@
-/*
-
-  ________.__                        _____.___.___________
- /  _____/|  | _____    ____  ____   \__  |   |\__    ___/
-/   \  ___|  | \__  \ _/ ___\/ __ \   /   |   |  |    |   
-\    \_\  \  |__/ __ \\  \__\  ___/   \____   |  |    |   
- \______  /____(____  /\___  >___  >  / ______|  |____|   
-        \/          \/     \/    \/   \/                  
-
-╔════════════════════════════════════════════════════════════════════════╗
-║                                                                        ║
-║  ## Created by GlaceYT!                                                ║
-║  ## Feel free to utilize any portion of the code                       ║
-║  ## DISCORD :  https://discord.com/invite/xQF9f9yUEM                   ║
-║  ## YouTube : https://www.youtube.com/@GlaceYt                         ║
-║                                                                        ║
-╚════════════════════════════════════════════════════════════════════════╝
-
-
-*/
-
-
 const { Client, GatewayIntentBits, ActivityType } = require('discord.js');
 const { EmbedBuilder } = require('discord.js');
 const fs = require('fs');
@@ -29,14 +7,15 @@ const express = require('express');
 require('dotenv').config();
 const ytdl = require('YTDL_NO_UPDATE');
 const { DisTube } = require('distube');
-const { SpotifyPlugins } = require('@distube/spotify')
+const { SpotifyPlugin } = require('@distube/spotify');
 
 const client = new Client({
   intents: Object.keys(GatewayIntentBits).map((a) => {
     return GatewayIntentBits[a];
   }),
 });
-const { printWatermark } = require('./functions/handlers');const distube = new DisTube(client, {
+const { printWatermark } = require('./functions/handlers');
+const distube = new DisTube(client, {
   searchSongs: 0,
   emitNewSongOnly: true,
   leaveOnEmpty: true,
@@ -45,7 +24,8 @@ const { printWatermark } = require('./functions/handlers');const distube = new D
   plugins: [
     new SpotifyPlugin({
       emitEventsAfterFetching: true
-    })]
+    })
+  ]
 });
 const prefixData = require('./prefix.json');
 const prefix = prefixData.prefix;
@@ -166,25 +146,3 @@ setInterval(() => {
 }, 15000);
 
 module.exports = client;
-
-
-/*
-
-  ________.__                        _____.___.___________
- /  _____/|  | _____    ____  ____   \__  |   |\__    ___/
-/   \  ___|  | \__  \ _/ ___\/ __ \   /   |   |  |    |   
-\    \_\  \  |__/ __ \\  \__\  ___/   \____   |  |    |   
- \______  /____(____  /\___  >___  >  / ______|  |____|   
-        \/          \/     \/    \/   \/                  
-
-╔════════════════════════════════════════════════════════════════════════╗
-║                                                                        ║
-║  ## Created by GlaceYT!                                                ║
-║  ## Feel free to utilize any portion of the code                       ║
-║  ## DISCORD :  https://discord.com/invite/xQF9f9yUEM                   ║
-║  ## YouTube : https://www.youtube.com/@GlaceYt                         ║
-║                                                                        ║
-╚════════════════════════════════════════════════════════════════════════╝
-
-
-*/
