@@ -143,7 +143,7 @@ client.once('ready', () => {
   setTimeout(() => {
     console.log('\x1b[32m%s\x1b[0m', `|    🎯 Activity sucessfully set!`);
     client.user.setPresence({
-      activities: [{ name: `Silly❤️`, type: ActivityType.Playing }],
+      activities: [{ name: `Silly❤️`, type: ActivityType.Playing with }],
       status: 'idle',
     });
   }, 2000); 
