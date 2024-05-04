@@ -93,15 +93,6 @@ client.on('messageCreate', (message) => {
   const command = client.commands.get(commandName);
 
   if (!command) return;
-  
-      }).catch((error) => {
-        console.error('Error joining voice channel:', error);
-        message.reply('There was an error trying to play the music.');
-      });
-    } else {
-      // Execute other commands normally
-      await command.execute(message, args);
-    }
 
   try {
     command.execute(message, args);
@@ -130,7 +121,7 @@ client.once('ready', () => {
   setTimeout(() => {
     console.log('\x1b[32m%s\x1b[0m', `|    🎯 Activity sucessfully set!`);
     client.user.setPresence({
-      activities: [{ name: `Silly❤️`, type: ActivityType.Loving }],
+      activities: [{ name: `to Silly❤️`, type: ActivityType.Listening }],
       status: 'idle',
     });
   }, 2000); 
