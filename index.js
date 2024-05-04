@@ -94,6 +94,37 @@ client.on('messageCreate', (message) => {
 
   if (!command) return;
 
+   try {
+    if (commandName === 'play') {
+      const voiceChannel = message.member.voice.channel;
+      if (!voiceChannel) return message.reply('You need to be in a voice channel to use this command.');
+
+      const url = args[0];
+      if (!url || !ytdl.validateURL(url)) {
+        return message.reply('Please provide a valid YouTube URL.');
+      }
+
+      voiceChannel.join().then(async (connection) => {
+        const stream = ytdl(url, { filter: 'audioonly' });
+        const dispatcher = connection.play(stream);
+
+        dispatcher.on('finish', () => {
+          voiceChannel.leave();
+        });
+
+        dispatcher.on('error', (err) => {
+          console.error('Error playing audio:', err);
+          voiceChannel.leave();
+        });
+      }).catch((error) => {
+        console.error('Error joining voice channel:', error);
+        message.reply('There was an error trying to play the music.');
+      });
+    } else {
+      // Execute other commands normally
+      await command.execute(message, args);
+    }
+
   try {
     command.execute(message, args);
   } catch (error) {
